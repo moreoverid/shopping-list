@@ -77,8 +77,15 @@ class ShoppingListsController extends Controller
         return response()->noContent();
     }
 
+    /**
+     * Method removes all user items
+     *
+     * @return Response
+     */
     public function removeAll()
     {
         ShoppingListService::removeAll();
+
+        return response()->noContent();
     }
 }

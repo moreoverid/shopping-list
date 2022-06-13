@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\DB;
 
 class ShoppingListService extends BaseService
 {
+    /**
+     * Method removes all user items
+     *
+     * @return void
+     */
     public static function removeAll()
     {
         $userId = auth()->user()->id;
